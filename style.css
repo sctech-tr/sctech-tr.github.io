@@ -1,0 +1,48 @@
+/* if you are reading this, you looked at the source code of a page. go away. */
+
+.topnav {
+    background-color: #333; /* Dark background */
+    overflow: hidden; /* Clear floats */
+    border-radius: 20px;
+}
+
+.topnav a {
+    float: left; /* Align links to the left */
+    color: #f2f2f2; /* Light text color */
+    text-align: center; /* Center text */    
+    padding: 14px 16px; /* Padding around links */
+    text-decoration: none; /* Remove underline */        
+    font-size: 17px; /* Font size */
+}
+
+.topnav a:hover {
+    background-color: #ddd; /* Light background on hover */
+    color: black; /* Dark text on hover */
+}
+
+.topnav .active {
+    background-color: #04AA6D; /* Active link color */
+    color: white; /* Active text color */
+}
+
+button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+@font-face {
+    font-family: 'wii'; /* This is the name in CSS */
+    src: url('sctech-tr.github.io/wii_bold.ttf') format('ttf'); /* Path to font file */
+}
+
+* {
+    font-family: "wii", sans-serif;
+}

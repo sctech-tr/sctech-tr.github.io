@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <title>github redirect service</title>
+    <script>
+        function redirectToUrl(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the values from the textboxes
+            const username = document.getElementById('username').value;
+            const repo = document.getElementById('repo').value;
+            const page = document.getElementById('page').value;
+
+            // Construct the URL
+            const url = `https://sctech-tr.github.io/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`;
+
+            // Redirect to the constructed URL
+            window.location.href = url;
+        }
+
+        function generateAndCopyLink() {
+            // Get the values from the textboxes
+            const username = document.getElementById('username').value;
+            const repo = document.getElementById('repo').value;
+            const page = document.getElementById('page').value;
+
+            // Construct the URL
+            const url = `https://sctech-tr.github.io/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`;
+
+            // Copy the URL to the clipboard
+            navigator.clipboard.writeText(url);
+
+            // Display the generated URL
+            const generatedUrlElement = document.getElementById('generatedUrl');
+            generatedUrlElement.textContent = `Generated URL: ${url}`;
+        }
+
+        function togglePageDropdown() {
+            const repoInput = document.getElementById('repo');
+            const pageDropdown = document.getElementById('page');
+
+            // Enable or disable the page dropdown based on the repo input
+            pageDropdown.disabled = !repoInput.value.trim();
+        }
+    </script>
+</head>
+<body>
+    <h1>GitHub Redirect Service</h1>
+    <form onsubmit="redirectToUrl(event)">
+        <label for="username">username (required):</label><br>
+        <input type="text" id="username" required><br><br>
+
+        <label for="repo">repo (optional):</label><br>
+        <input type="text" id="repo"><br><br>
+
+        <label for="page">page (optional):</label><br>
+        <select id="page">
+            <option value=""> </option>
+            <option value="issues">issues</option>
+            <option value="pulls">pull requests</option>
+            <option value="wiki">wiki</option>
+            <option value="projects">projects</option>
+            <option value="actions">actions</option>
+        </select><br><br>
+
+        <button type="submit">GO!!!</button>
+        <button type="button" onclick="generateAndCopyLink()">copy to clipboard</button>
+    </form>
+
+    <p id="generatedUrl"></p>
+</body>
+</html>
