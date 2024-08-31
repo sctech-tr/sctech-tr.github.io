@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>what the hell is my ip?</title>
+    <title>what the heck is my ip?</title>
     <style>
         body {
             font-family: Trebuchet MS, sans-serif;
@@ -21,7 +21,9 @@
 </head>
 <body>
     <p>your ip address is:</p>
-    <h1 id="ip-address">n/a</h1>
+    <h1 id="ip-address" onclick="copyToClipboard()">n/a</h1>
+    <p>click it to copy your ip to your clipboard!</p>
+    <div id="confirmation" class="confirmation">copied to clipboard!</div>
 
     <script>
         fetch('https://api.ipify.org?format=json')
@@ -32,6 +34,18 @@
             .catch(error => {
                 document.getElementById('ip-address').innerText = 'unable to fetch your ip. come back later!';
             });
+        function copyToClipboard() {
+            const ipText = document.getElementById('ip-address').innerText;
+            navigator.clipboard.writeText(ipText).then(() => {
+                const confirmation = document.getElementById('confirmation');
+                confirmation.style.display = 'block';
+
+                // Hide message after 2 seconds
+                setTimeout(() => {
+                    confirmation.style.display = 'none';
+                }, 2000);
+            });
+        }
     </script>
 </body>
 </html>
