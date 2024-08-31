@@ -40,7 +40,7 @@ button {
 
 @font-face {
     font-family: 'wii'; /* This is the name in CSS */
-    src: url('sctech-tr.github.io/wii_bold.ttf') format('ttf'); /* Path to font file */
+    src: url('https://sctech-tr.github.io/wii_bold.ttf') format('ttf'); /* Path to font file */
 }
 
 * {
