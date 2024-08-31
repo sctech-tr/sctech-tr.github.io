@@ -1,10 +1,13 @@
-// Function to get URL parameters
-function getUrlParameter(name) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(name);
-}
+window.onload = function() {
+    // Check the referrer URL
+    const referrer = document.referrer;
 
-// Check if 'from-neocities' parameter is true
-if (getUrlParameter('from-neocities') === 'true') {
-    alert('sctech-tr.neocities.org has been moved here.');
-}
+    // Compare it with the specific URL you are checking for
+    const targetURL = "https://sctech-tr.neocities.org";
+
+    if (referrer === targetURL) {
+        alert('sctech-tr.neocities.org has been moved here.');
+    } else {
+        console.log("User came from: " + referrer);
+    }
+};
