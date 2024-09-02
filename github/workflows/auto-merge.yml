@@ -1,0 +1,55 @@
+name: Auto-merge user pages
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Get list of changed files
+        id: files
+        run: |
+          echo "CHANGED_FILES=$(git diff --name-only origin/main)" >> $GITHUB_ENV
+
+      - name: Filter HTML files in users directory
+        id: filter
+        run: |
+          CHANGED_HTML_FILES=$(echo "$CHANGED_FILES" | grep '^users/.*\.html$' || true)
+          echo "CHANGED_HTML_FILES=$CHANGED_HTML_FILES" >> $GITHUB_ENV
+
+      - name: Count number of HTML files added in users directory
+        id: count
+        run: |
+          FILE_COUNT=$(echo "$CHANGED_HTML_FILES" | wc -l)
+          echo "FILE_COUNT=$FILE_COUNT" >> $GITHUB_ENV
+
+      - name: Check if exactly one new HTML file is added
+        if: env.FILE_COUNT != '1'
+        run: |
+          echo "Invalid number of HTML files in the users directory (expected exactly 1)."
+          exit 1
+
+      - name: Check if the new HTML file does not already exist
+        id: check_existing
+        run: |
+          NEW_FILE=$(echo "$CHANGED_HTML_FILES")
+          if [ -f "$NEW_FILE" ]; then
+            echo "The file $NEW_FILE already exists. Failing the job."
+            exit 1
+          fi
+
+      - name: Auto Merge PR
+        if: success()
+        uses: pascalgn/automerge-action@v0.14.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          mergeMethod: squash
+          authorName: "GitHub Action"
+          authorEmail: "action@github.com"
