@@ -46,7 +46,7 @@ jobs:
 
       - name: Auto Merge PR
         if: success()
-        uses: pascalgn/automerge-action@v0.14.3
+        uses: "pascalgn/automerge-action@v0.16.3"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
