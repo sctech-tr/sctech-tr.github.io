@@ -29,3 +29,7 @@ if you do at least one of these:
 - i will prevent you from adding any pages in the future
 
 have fun!
+
+# current users list:
+- username (public domain - example site)
+- sctech (@sctech-tr)
