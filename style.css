@@ -1,17 +1,23 @@
-/* if you are reading this, you looked at the source code of a page. go away. */
+/* Global Styles */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    font-family: "wii", sans-serif; /* Custom font for the entire page */
+}
 
+/* Top Navigation Bar */
 .topnav {
     background-color: #333; /* Dark background */
     overflow: hidden; /* Clear floats */
-    border-radius: 20px;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 0; /* Padding for vertical spacing */
 }
 
 .topnav a {
     float: left; /* Align links to the left */
     color: #f2f2f2; /* Light text color */
-    text-align: center; /* Center text */    
+    text-align: center; /* Center text */
     padding: 14px 16px; /* Padding around links */
-    text-decoration: none; /* Remove underline */        
+    text-decoration: none; /* Remove underline */
     font-size: 17px; /* Font size */
 }
 
@@ -25,11 +31,12 @@
     color: white; /* Active text color */
 }
 
+/* Button Styles */
 button {
     background-color: #04AA6D; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 32px; /* Padding around the button */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -38,11 +45,33 @@ button {
     cursor: pointer; /* Pointer cursor on hover */
 }
 
-@font-face {
-    font-family: 'wii'; /* This is the name in CSS */
-    src: url('https://sctech-tr.github.io/wii_bold.ttf') format('ttf'); /* Path to font file */
+/* Textbox Styles */
+input[type="text"] {
+    border: 2px solid #04AA6D; /* Border color matching button */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size to match button */
+    width: calc(100% - 64px); /* Full width minus padding */
+    max-width: 300px; /* Maximum width for better layout control */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for better visibility */
+    outline: none; /* Remove default outline */
 }
 
-* {
-    font-family: "wii", sans-serif;
+input[type="text"]:focus {
+    border-color: #04AA6D; /* Border color on focus */
+    box-shadow: 0 0 4px rgba(0,0,0,0.2); /* Enhanced shadow on focus */
+}
+
+/* Example Container for Alignment */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+    margin: 20px;
+}
+/* Custom Wii Font */
+@font-face {
+    font-family: 'wii'; /* This is the name in CSS */
+    src: url('https://sctech-tr.mooo.com/wii_bold.ttf') format('ttf'); /* Path to font file */
 }
