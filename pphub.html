@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>personal pages hub</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <h1>welcome to the personal pages hub!</h1>
+  <p>enter the name of your page without .html:</p>
+  <input type="text" id="pageUrl" placeholder="e.g., username">
+  <button onclick="redirectToPage()">GO!!!</button>
+
+  <script>
+    function redirectToPage() {
+      const pageUrl = document.getElementById("pageUrl").value;
+      if (pageUrl) {
+        window.location.href = "users/" + pageUrl + ".html";
+      } else {
+        alert("please enter a valid username");
+      }
+    }
+  </script>
+</body>
+</html>
