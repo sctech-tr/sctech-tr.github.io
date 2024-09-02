@@ -13,6 +13,8 @@ projects hosted in this site: <br>
 - you only uploaded one html page (you can put the css and js code inside the file)
 - the username isn't taken
 - it is an html file
+## if you don't have a github account and/or you don't know how to open a pr:
+learn how to open a pr **or** send me a mail: gq2ic3wbe@mozmail.com (maximum mail size is 10 mb)
 ## rules:
 - no nsfw
 - no malware
