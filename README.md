@@ -24,5 +24,6 @@ if you do at least one of these:
 
 - i will remove your page and replace it with a "this person is banned because of their actions." page
 - i will report you to github
+- i will prevent you from adding any pages in the future
 
 have fun!
