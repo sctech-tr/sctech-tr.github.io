@@ -1,10 +1,5 @@
 # welcome to my dumb wedsite!
-you will find things here. <br>
-projects hosted in this site: <br>
-<a href="https://sctech.mooo.com/pphub.html">personal page hub<br></a>
-<a href="https://sctech.mooo.com/spotify.html">spotify - playing now...<br></a>
-<a href="https://sctech.mooo.com/gh_index.html">github redirect service<br></a>
-<a href="https://sctech.mooo.com/ip.html">what the heck is my ip?<br></a>
+you will find things here.
 ## how to add your own personal page:
 1. fork this repo.
 2. add your page to /users
