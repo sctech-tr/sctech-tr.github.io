@@ -1,5 +1,5 @@
-# welcome to my dumb secondary wedsite!
-you will find random things here. <br>
+# welcome to my dumb wedsite!
+you will find things here. <br>
 projects hosted in this site: <br>
 <a href="https://sctech.mooo.com/pphub.html">personal page hub<br></a>
 <a href="https://sctech.mooo.com/spotify.html">spotify - playing now...<br></a>
