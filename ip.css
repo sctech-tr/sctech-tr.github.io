@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    margin-top: 50px;
+}
+p {
+    font-size: 1.5em;
+    color: #333;
+}
+h1 {
+    font-size: 2em;
+    cursor: pointer;
+}
+h1:hover {
+    text-decoration: underline;
+}
+.confirmation {
+    margin-top: 20px;
+    color: green;
+    font-size: 1.2em;
+    display: none;
+}
