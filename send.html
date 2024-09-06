@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <title>send me a message</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("cBNzAwZunI-sqz1Ng");
+        })();
+
+        function sendMail(e) {
+            e.preventDefault(); // Prevent default form submission
+            emailjs.sendForm('service_khnxrpa', 'template_ro64laf', '#emailForm')
+                .then(function(response) {
+                    alert('email sent successfully!');
+                }, function(error) {
+                    alert('failed to send email. error: ' + JSON.stringify(error));
+                });
+        }
+    </script>
+</head>
+<body>
+    <h2>send me some messages</h2>
+    <h4>pls don't abuse this</h4>
+    <form id="emailForm" onsubmit="sendMail(event)">
+        <label for="subject">your name:</label><br>
+        <input type="text" id="from_name" name="from_name" required><br><br>
+      
+        <label for="subject">subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="subject">your email:</label><br>
+        <input type="text" id="reply_to" name="reply_to" required><br><br>
+        
+        <label for="message">message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="30" required></textarea><br><br>
+        
+        <input type="submit" value="send!!!">
+    </form>
+</body>
+</html>
