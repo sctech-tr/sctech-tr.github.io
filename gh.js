@@ -7,7 +7,7 @@ function redirectToUrl(event) {
       const page = document.getElementById('page').value;
 
       // Construct the URL
-      const url = `https://sctech-tr.github.io/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`;
+      const url = `https://sctech-tr.mooo.com/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`;
 
       // Redirect to the constructed URL
       window.location.href = url;
