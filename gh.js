@@ -7,7 +7,7 @@ function redirectToUrl(event) {
       const page = document.getElementById('page').value;
 
       // Construct the URL
-      const url = `https://sctech-tr.mooo.com/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`;
+      const url = `https://sctech.mooo.com/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`;
 
       // Redirect to the constructed URL
       window.location.href = url;
@@ -20,7 +20,7 @@ function generateAndCopyLink() {
       const page = document.getElementById('page').value;
 
       // Construct the URL
-      const url = `https://sctech-tr.mooo.com/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`;
+      const url = `https://sctech.mooo.com/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`;
 
       // Copy the URL to the clipboard
       navigator.clipboard.writeText(url);
