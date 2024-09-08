@@ -1,0 +1,91 @@
+name: Generate Sitemap
+
+on:
+  push:
+    paths:
+      - '**/*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Create Sitemap Generator Script
+        run: |
+          echo "const fs = require('fs');" > generate-sitemap.js
+          echo "const path = require('path');" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "const baseDir = './';" >> generate-sitemap.js
+          echo "const sitemapPath = './sitemap.html';" >> generate-sitemap.js
+          echo "const baseUrl = 'https://sctech.mooo.com/';" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "function generateSitemap() {" >> generate-sitemap.js
+          echo "  let sitemapContent = \`<!DOCTYPE html>" >> generate-sitemap.js
+          echo "<html>" >> generate-sitemap.js
+          echo "  <head>" >> generate-sitemap.js
+          echo "    <meta charset='UTF-8'>" >> generate-sitemap.js
+          echo "    <meta name='viewport' content='width=device-width, initial-scale=1.0'>" >> generate-sitemap.js
+          echo "    <link href='style.css' rel='stylesheet' type='text/css' media='all'>" >> generate-sitemap.js
+          echo "  </head>" >> generate-sitemap.js
+          echo "  <body>" >> generate-sitemap.js
+          echo "    <div class='topnav'>" >> generate-sitemap.js
+          echo "      <a href='index.html'>home</a>" >> generate-sitemap.js
+          echo "      <a href='contact.html'>contact</a>" >> generate-sitemap.js
+          echo "      <a href='pages.html'>pages</a>" >> generate-sitemap.js
+          echo "      <a href='https://wiki.sctech.mooo.com'>wiki</a>" >> generate-sitemap.js
+          echo "      <a href='https://status.sctech.mooo.com'>status</a>" >> generate-sitemap.js
+          echo "      <a href='sitemap.html' class='active'>sitemap</a>" >> generate-sitemap.js
+          echo "    </div>" >> generate-sitemap.js
+          echo "    <h1>sitemap for sctech.mooo.com</h1>" >> generate-sitemap.js
+          echo "    <h4>This is automated</h4>" >> generate-sitemap.js
+          echo "    <ul>\`;" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "  function walkDir(currentPath) {" >> generate-sitemap.js
+          echo "    const files = fs.readdirSync(currentPath);" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "    files.forEach((file) => {" >> generate-sitemap.js
+          echo "      const fullPath = path.join(currentPath, file);" >> generate-sitemap.js
+          echo "      const relativePath = path.relative(baseDir, fullPath);" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "      if (fs.lstatSync(fullPath).isDirectory()) {" >> generate-sitemap.js
+          echo "        sitemapContent += \`<li><p>\${file}</p></li>\\n<ul>\`;" >> generate-sitemap.js
+          echo "        walkDir(fullPath);" >> generate-sitemap.js
+          echo "        sitemapContent += '</ul>';" >> generate-sitemap.js
+          echo "      } else {" >> generate-sitemap.js
+          echo "        sitemapContent += \`<li><a href='\${baseUrl}\${relativePath}'>\${file}</a></li>\`;" >> generate-sitemap.js
+          echo "      }" >> generate-sitemap.js
+          echo "    });" >> generate-sitemap.js
+          echo "  }" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "  walkDir(baseDir);" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "  sitemapContent += '</ul></body></html>';" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "  fs.writeFileSync(sitemapPath, sitemapContent);" >> generate-sitemap.js
+          echo "  console.log('Sitemap generated successfully.');" >> generate-sitemap.js
+          echo "}" >> generate-sitemap.js
+          echo "" >> generate-sitemap.js
+          echo "generateSitemap();" >> generate-sitemap.js
+
+      - name: Install Dependencies (No external modules required)
+        run: echo "No external dependencies to install."
+
+      - name: Generate Sitemap
+        run: node generate-sitemap.js
+
+      - name: Commit and Push Sitemap Update
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add sitemap.html
+          git commit -m "Automated sitemap update"
+          git push
