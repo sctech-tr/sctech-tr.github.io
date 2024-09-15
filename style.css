@@ -1,7 +1,10 @@
 /* Global Styles */
+body {
+    font-family: "wii", sans-serif; /* Custom font for the entire page */
+}
+
 * {
     box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
-    font-family: "wii", sans-serif; /* Custom font for the entire page */
 }
 
 /* Top Navigation Bar */
@@ -70,8 +73,26 @@ input[type="text"]:focus {
     gap: 20px; /* Space between elements */
     margin: 20px;
 }
+
 /* Custom Wii Font */
 @font-face {
     font-family: 'wii'; /* This is the name in CSS */
-    src: url('https://sctech-tr.mooo.com/wii_bold.ttf') format('ttf'); /* Path to font file */
+    src: url('https://sctech.mooo.com/wii_bold.ttf') format('truetype'); /* Path to font file */
+}
+
+/* Code Block Styles */
+.code-block {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: monospace; /* Ensure monospace for code blocks */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px; /* Adjust size for better readability */
+}
+
+/* Ensure monospace for all pre and code elements */
+pre, code {
+    font-family: monospace;
 }
