@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing OAuth</title>
+</head>
+<body>
+    <h1>Processing OAuth...</h1>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+    <script>
+        // Initialize Auth0 client
+        let auth0 = null;
+
+        async function initAuth0() {
+            auth0 = await createAuth0Client({
+                domain: 'YOUR_AUTH0_DOMAIN',
+                client_id: 'dev-qtedxnmpenza4fd5.us.auth0.com',
+                redirect_uri: window.location.origin + '/callback.html',
+                audience: 'https://api.github.com/',
+                scope: 'read:user repo'
+            });
+
+            // Handle the redirect and retrieve the tokens
+            await auth0.handleRedirectCallback();
+
+            // Get the access token silently for GitHub API requests
+            const accessToken = await auth0.getTokenSilently();
+            localStorage.setItem('github_token', accessToken);
+
+            // Redirect back to the main page
+            window.location.href = '/repolist.html';
+        }
+
+        initAuth0();
+    </script>
+</body>
+</html>
