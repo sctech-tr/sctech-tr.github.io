@@ -1,4 +1,4 @@
-# welcome to my dumb wedsite!
+# welcome to my website!
 you will find things here.
 ## How to add your personal page
 
