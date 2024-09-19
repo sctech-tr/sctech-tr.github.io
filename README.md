@@ -34,6 +34,6 @@ Send your file via email to: [gq2ic3wbe@mozmail.com](mailto:gq2ic3wbe@mozmail.co
   - You will be banned from adding pages in the future.
 
 # Current users list:
-- username (public domain - example site)
+- rick-astley (public domain - example site)
 - sctech (@sctech-tr)
 
