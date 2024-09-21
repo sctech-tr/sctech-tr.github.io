@@ -3,7 +3,7 @@ import os
 def generate_sitemap(directory):
     urls = []
     for dirpath, _, filenames in os.walk(directory):
-        for filename in filenames:
+        for filename in filenames: 
             if filename.endswith(('.html', '.md', '.css', '.js', '.png', '.gif', '.webp', '.jpg', '.jpeg', '.txt', '.ttf')):
                 path = os.path.join(dirpath, filename)
                 url = path.replace(directory, '').replace('\\', '/')
