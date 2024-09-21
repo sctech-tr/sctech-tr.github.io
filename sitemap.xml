@@ -73,6 +73,9 @@
     <loc>https://sctech.mooo.com/wii_bold.ttf</loc>
   </url>
   <url>
+    <loc>https://sctech.mooo.com/avspl.html</loc>
+  </url>
+  <url>
     <loc>https://sctech.mooo.com/_config.yml</loc>
   </url>
   <url>
@@ -92,6 +95,9 @@
   </url>
   <url>
     <loc>https://sctech.mooo.com/.github/workflows/generate-sitemap.yml</loc>
+  </url>
+  <url>
+    <loc>https://sctech.mooo.com/LICENSE.rst</loc>
   </url>
   <url>
     <loc>https://sctech.mooo.com/wii.html</loc>
@@ -119,6 +125,9 @@
   </url>
   <url>
     <loc>https://sctech.mooo.com/pphub.html</loc>
+  </url>
+  <url>
+    <loc>https://sctech.mooo.com/avspl.txt</loc>
   </url>
   <url>
     <loc>https://sctech.mooo.com/CNAME</loc>
