@@ -7,7 +7,7 @@ def generate_sitemap(directory):
             if filename.endswith(('.html', '.md', '.css', '.js', '.png', '.gif', '.webp', '.jpg', '.jpeg', '.txt', '.ttf')):
                 path = os.path.join(dirpath, filename)
                 url = path.replace(directory, '').replace('\\', '/')
-                urls.append(f"  <url><loc>https://sctech.mooo.com{url}</loc></url>")
+                urls.append(f"  <url><loc>https://sctech.mooo.com/{url}</loc></url>")
     return "\n".join(urls)
 
 sitemap = """<?xml version="1.0" encoding="UTF-8"?>
