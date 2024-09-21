@@ -1,0 +1,40 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch if different
+  workflow_dispatch:
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Generate Sitemap
+        run: |
+          # Find all files excluding .git, and format them as XML
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image.v1">' >> sitemap.xml
+          
+          find . -type f ! -path '*/.git/*' | while read -r file; do
+            file_path=$(realpath --relative-to=. "$file")
+            echo "  <url>" >> sitemap.xml
+            echo "    <loc>https://sctech.mooo.com/$file_path</loc>" >> sitemap.xml
+            echo "  </url>" >> sitemap.xml
+          done
+          
+          echo '</urlset>' >> sitemap.xml
+
+      - name: Commit and Push Sitemap
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add sitemap.xml
+          git commit -m "Update sitemap"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
