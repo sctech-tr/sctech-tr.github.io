@@ -1,0 +1,18 @@
+A Very Simple Public License
+Version 1, September 2024
+
+Copyleft (ↄ) <year> <name>
+Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
+
+A Very Simple Public License
+
+0. You can
+do anything with this material with the exceptions stated below.
+1. Exceptions
+- Distribute closed source versions of this material.
+- Hold the owner responsible for any problems that may occur while using this material.
+- Change the license of your project if forked / redistributed.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, W
+HETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
