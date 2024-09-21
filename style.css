@@ -82,6 +82,7 @@ input[type="text"]:focus {
 
 /* Code Block Styles */
 .code-block {
+    color: #dae1e7;
     background-color: #161b22;
     border: 1px solid #ddd;
     border-radius: 4px;
