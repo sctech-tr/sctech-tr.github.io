@@ -1,4 +1,4 @@
-import os
+import os 
 
 def generate_sitemap(directory):
     urls = []
