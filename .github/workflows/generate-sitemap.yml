@@ -21,20 +21,24 @@ jobs:
           REPO_OWNER=$(echo "${{ github.repository_owner }}")
           REPO_NAME=$(basename -s .git "${{ github.repository }}")
 
-          # Construct the GitHub Pages URL (Assumes it's using GitHub Pages default)
+          # Default to GitHub Pages URL (User/Organization or Project Pages)
           if [ "$REPO_NAME" == "$REPO_OWNER" ]; then
-            # User/organization GitHub Pages (e.g., https://username.github.io)
             PAGES_URL="https://${REPO_OWNER}.github.io"
           else
-            # Project GitHub Pages (e.g., https://username.github.io/repository-name)
             PAGES_URL="https://${REPO_OWNER}.github.io/${REPO_NAME}"
+          fi
+
+          # Check if a CNAME file exists
+          if [ -f CNAME ]; then
+            # Read the CNAME file and use it as the URL
+            PAGES_URL=$(cat CNAME)
           fi
 
           echo "PAGES_URL=$PAGES_URL" >> $GITHUB_ENV
 
       - name: Generate Sitemap
         run: |
-          # Get the GitHub Pages URL from the environment
+          # Get the GitHub Pages URL (or CNAME) from the environment
           PAGES_URL=${{ env.PAGES_URL }}
 
           # Create the sitemap
