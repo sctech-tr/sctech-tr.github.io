@@ -97,9 +97,6 @@
     <loc>https://sctech.mooo.com/.github/workflows/generate-sitemap.yml</loc>
   </url>
   <url>
-    <loc>https://sctech.mooo.com/LICENSE.rst</loc>
-  </url>
-  <url>
     <loc>https://sctech.mooo.com/wii.html</loc>
   </url>
   <url>
@@ -113,6 +110,9 @@
   </url>
   <url>
     <loc>https://sctech.mooo.com/robots.txt</loc>
+  </url>
+  <url>
+    <loc>https://sctech.mooo.com/LICENSE-AVSPL</loc>
   </url>
   <url>
     <loc>https://sctech.mooo.com/pages.html</loc>
