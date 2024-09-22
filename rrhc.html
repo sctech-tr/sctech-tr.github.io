@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a very innocent hcaptcha :)</title>
+  <script src="https://hcaptcha.com/1/api.js" async defer></script>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <h1>a very innocent hcaptcha :)</h1>
+  <form id="form" action="/submit" method="POST" onsubmit="return validateCaptcha();">
+    <div class="h-captcha" data-sitekey="3cbe28e8-d648-4372-b182-a6586f206864"></div>
+    <button type="submit">submit</button>
+  </form>
+
+  <script>
+    function validateCaptcha() {
+      const response = hcaptcha.getResponse();
+      if (response.length === 0) {
+        alert("please complete the hcaptcha.");
+        return false;
+      }
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      return false; 
+    }
+  </script>
+</body>
+</html>
