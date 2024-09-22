@@ -3,7 +3,7 @@ name: Generate Sitemap
 on:
   push:
     branches:
-      - main  # Change this to your main branch if different
+      - main
   workflow_dispatch:
 
 jobs:
@@ -34,6 +34,9 @@ jobs:
             PAGES_URL=$(cat CNAME)
           fi
 
+          # Clean up the PAGES_URL to exclude .github
+          PAGES_URL=$(echo "$PAGES_URL" | sed 's|\.github.*||')
+
           echo "PAGES_URL=$PAGES_URL" >> $GITHUB_ENV
 
       - name: Generate Sitemap
@@ -48,8 +51,9 @@ jobs:
           # Find all files excluding .git and format them as XML
           find . -type f ! -path '*/.git/*' | while read -r file; do
             file_path=$(realpath --relative-to=. "$file")
+            file_path=$(echo "$file_path" | sed 's|^|'"$PAGES_URL/"'|; s|\.github/||')  # Add URL and remove .github
             echo "  <url>" >> sitemap.xml
-            echo "    <loc>$PAGES_URL/$file_path</loc>" >> sitemap.xml
+            echo "    <loc>$file_path</loc>" >> sitemap.xml
             echo "  </url>" >> sitemap.xml
           done
           
