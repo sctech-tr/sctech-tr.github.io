@@ -14,16 +14,38 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Get Repository Info
+        id: repo-info
+        run: |
+          # Extract the repository owner and name from the GitHub environment
+          REPO_OWNER=$(echo "${{ github.repository_owner }}")
+          REPO_NAME=$(basename -s .git "${{ github.repository }}")
+
+          # Construct the GitHub Pages URL (Assumes it's using GitHub Pages default)
+          if [ "$REPO_NAME" == "$REPO_OWNER" ]; then
+            # User/organization GitHub Pages (e.g., https://username.github.io)
+            PAGES_URL="https://${REPO_OWNER}.github.io"
+          else
+            # Project GitHub Pages (e.g., https://username.github.io/repository-name)
+            PAGES_URL="https://${REPO_OWNER}.github.io/${REPO_NAME}"
+          fi
+
+          echo "PAGES_URL=$PAGES_URL" >> $GITHUB_ENV
+
       - name: Generate Sitemap
         run: |
-          # Find all files excluding .git, and format them as XML
+          # Get the GitHub Pages URL from the environment
+          PAGES_URL=${{ env.PAGES_URL }}
+
+          # Create the sitemap
           echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
           echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image.v1">' >> sitemap.xml
           
+          # Find all files excluding .git and format them as XML
           find . -type f ! -path '*/.git/*' | while read -r file; do
             file_path=$(realpath --relative-to=. "$file")
             echo "  <url>" >> sitemap.xml
-            echo "    <loc>https://sctech.mooo.com/$file_path</loc>" >> sitemap.xml
+            echo "    <loc>$PAGES_URL/$file_path</loc>" >> sitemap.xml
             echo "  </url>" >> sitemap.xml
           done
           
