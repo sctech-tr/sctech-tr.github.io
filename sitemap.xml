@@ -91,10 +91,10 @@
     <loc>sctech.mooo.com/README.md</loc>
   </url>
   <url>
-    <loc>sctech.mooo.com/.github/workflows/auto-merge.yml</loc>
+    <loc>sctech.mooo.com/workflows/auto-merge.yml</loc>
   </url>
   <url>
-    <loc>sctech.mooo.com/.github/workflows/generate-sitemap.yml</loc>
+    <loc>sctech.mooo.com/workflows/generate-sitemap.yml</loc>
   </url>
   <url>
     <loc>sctech.mooo.com/wii.html</loc>
