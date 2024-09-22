@@ -19,6 +19,9 @@
     <loc>sctech.mooo.com/js/gh_redir.js</loc>
   </url>
   <url>
+    <loc>sctech.mooo.com/js/idt.js</loc>
+  </url>
+  <url>
     <loc>sctech.mooo.com/js/goexplore.js</loc>
   </url>
   <url>
@@ -32,9 +35,6 @@
   </url>
   <url>
     <loc>sctech.mooo.com/ip.html</loc>
-  </url>
-  <url>
-    <loc>sctech.mooo.com/hcaptcha.html</loc>
   </url>
   <url>
     <loc>sctech.mooo.com/gh_redir.html</loc>
@@ -100,6 +100,9 @@
     <loc>sctech.mooo.com/wii.html</loc>
   </url>
   <url>
+    <loc>sctech.mooo.com/css/idt.css</loc>
+  </url>
+  <url>
     <loc>sctech.mooo.com/css/goexplore.css</loc>
   </url>
   <url>
@@ -113,6 +116,9 @@
   </url>
   <url>
     <loc>sctech.mooo.com/LICENSE-AVSPL</loc>
+  </url>
+  <url>
+    <loc>sctech.mooo.com/idt.html</loc>
   </url>
   <url>
     <loc>sctech.mooo.com/pages.html</loc>
