@@ -1,68 +1,51 @@
 /* Global Styles */
 body {
-    font-family: "wii", sans-serif; /* Custom font for the entire page */
+    font-family: monospace, sans-serif; /* Monospace for terminal look */
+    background-color: #1e1e1e; /* Dark terminal background */
+    color: #c5c8c6; /* Light grey text */
+    margin: 0;
+    padding: 20px; /* Added padding for more space around content */
 }
 
 * {
     box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
 }
 
-/* Top Navigation Bar */
-.topnav {
-    background-color: #333; /* Dark background */
-    overflow: hidden; /* Clear floats */
-    border-radius: 20px; /* Rounded corners */
-    padding: 10px 0; /* Padding for vertical spacing */
-}
-
-.topnav a {
-    float: left; /* Align links to the left */
-    color: #f2f2f2; /* Light text color */
-    text-align: center; /* Center text */
-    padding: 14px 16px; /* Padding around links */
-    text-decoration: none; /* Remove underline */
-    font-size: 17px; /* Font size */
-}
-
-.topnav a:hover {
-    background-color: #ddd; /* Light background on hover */
-    color: black; /* Dark text on hover */
-}
-
-.topnav .active {
-    background-color: #04AA6D; /* Active link color */
-    color: white; /* Active text color */
-}
-
 /* Button Styles */
 button {
-    background-color: #04AA6D; /* Green */
+    background-color: #50fa7b; /* Terminal green */
     border: none;
-    color: white;
-    padding: 15px 32px; /* Padding around the button */
+    color: black; /* Black text on green */
+    padding: 10px 20px; /* Adjusted padding */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px;
+    border-radius: 3px; /* Slightly rounded for terminal-like buttons */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #44475a; /* Dark hover effect */
+    color: #ffffff; /* White text on hover */
 }
 
 /* Textbox Styles */
 input[type="text"] {
-    border: 2px solid #04AA6D; /* Border color matching button */
-    border-radius: 5px; /* Rounded corners */
-    padding: 15px 20px; /* Padding around the text */
-    font-size: 16px; /* Font size to match button */
-    width: calc(100% - 64px); /* Full width minus padding */
-    max-width: 300px; /* Maximum width for better layout control */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for better visibility */
+    border: 2px solid #6272a4; /* Terminal-themed border color */
+    background-color: #1e1e1e; /* Match body background */
+    color: #f8f8f2; /* Light terminal text */
+    padding: 10px 14px; /* Adjusted padding */
+    font-size: 14px; /* Match button font size */
+    width: calc(100% - 48px); /* Full width minus padding */
+    max-width: 300px; /* Max width for better layout control */
+    border-radius: 3px; /* Consistent with buttons */
     outline: none; /* Remove default outline */
 }
 
 input[type="text"]:focus {
-    border-color: #04AA6D; /* Border color on focus */
-    box-shadow: 0 0 4px rgba(0,0,0,0.2); /* Enhanced shadow on focus */
+    border-color: #50fa7b; /* Green border on focus */
+    box-shadow: 0 0 4px rgba(80, 250, 123, 0.5); /* Greenish shadow */
 }
 
 /* Example Container for Alignment */
@@ -70,30 +53,60 @@ input[type="text"]:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Space between elements */
-    margin: 20px;
+    gap: 10px; /* Reduced space between elements */
+    margin: 20px auto; /* Centered container with auto margins */
+    max-width: 600px; /* Set a max width for better layout control */
 }
 
 /* Custom Wii Font */
 @font-face {
-    font-family: 'wii'; /* This is the name in CSS */
-    src: url('https://sctech.mooo.com/wii_bold.ttf') format('truetype'); /* Path to font file */
+    font-family: 'wii'; /* Keep this if you plan to use it elsewhere */
+    src: url('https://sctech.mooo.com/wii_bold.ttf') format('truetype');
 }
 
 /* Code Block Styles */
 .code-block {
-    color: #dae1e7;
-    background-color: #161b22;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    color: #f8f8f2; /* Light text */
+    background-color: #282a36; /* Terminal-like dark background */
+    border: 1px solid #44475a; /* Soft border color */
+    border-radius: 3px;
     padding: 10px;
-    font-family: monospace; /* Ensure monospace for code blocks */
+    font-family: monospace; /* Terminal look */
     white-space: pre-wrap;
     word-wrap: break-word;
-    font-size: 14px; /* Adjust size for better readability */
+    font-size: 14px; /* Adjusted for readability */
 }
 
 /* Ensure monospace for all pre and code elements */
 pre, code {
     font-family: monospace;
+}
+
+/* -- Terminal-Themed Top Bar -- */
+.topbar {
+    background-color: #282a36; /* Dark terminal background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-family: monospace; /* Monospace for terminal feel */
+    border-bottom: 2px solid #44475a; /* Add a terminal-style border at bottom */
+}
+
+.topbar .prompt {
+    color: #50fa7b; /* Bright green terminal prompt color */
+    background-color: #3e4451; /* Slightly darker background for prompt */
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: #8be9fd; /* Light blue terminal-like link color */
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.topbar a:hover {
+    color: #ffffff; /* White on hover */
 }
