@@ -19,7 +19,7 @@ Learn how to open a PR by referring to GitHub's documentation.
 
 **or**
 
-Send your file via email to: [gq2ic3wbe@mozmail.com](mailto:gq2ic3wbe@mozmail.com) (maximum email size: 10 MB).
+Send your file via email to: [sctech@national.shitposting.agency](mailto:sctech@national.shitposting.agency)
 
 ## Rules:
 - No NSFW content.
@@ -33,7 +33,7 @@ Send your file via email to: [gq2ic3wbe@mozmail.com](mailto:gq2ic3wbe@mozmail.co
   - You will be reported to GitHub.
   - You will be banned from adding pages in the future.
 
-# Current users list:
+## Current users list:
 - rick-astley (public domain - example site)
 - sctech (@sctech-tr)
 
