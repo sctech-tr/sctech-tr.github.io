@@ -110,3 +110,7 @@ pre, code {
 .topbar a:hover {
     color: #ffffff; /* White on hover */
 }
+
+a {
+    color: #ffffff; /* white links */
+}
