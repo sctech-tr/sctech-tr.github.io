@@ -4,6 +4,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginButton = document.getElementById('loginButton');
     const passcodeInput = document.getElementById('passcode');
 
+    // Function to extract URL parameters
+    function getUrlParams() {
+        const params = {};
+        const queryString = window.location.search.substring(1);
+        const paramPairs = queryString.split('&');
+        paramPairs.forEach(function(pair) {
+            const [key, value] = pair.split('=');
+            params[decodeURIComponent(key)] = decodeURIComponent(value || '');
+        });
+        return params;
+    }
+
+    // Auto-fill form with URL parameters
+    function fillFormFromParams(params) {
+        document.getElementById('name').value = params.name || '';
+        document.getElementById('surname').value = params.surname || '';
+        document.getElementById('gender').value = params.gender || 'male';
+        document.getElementById('mail').value = params.mail || '';
+        document.getElementById('phone').value = params.phone || '';
+        document.getElementById('job').value = params.job || '';
+        document.getElementById('website').value = params.website || '';
+        document.getElementById('github').value = params.github || '';
+        document.getElementById('instagram').value = params.instagram || '';
+        document.getElementById('x').value = params.x || '';
+        document.getElementById('facebook').value = params.facebook || '';
+        document.getElementById('youtube').value = params.youtube || '';
+    }
+
     loginButton.addEventListener('click', async function() {
         const passcode = passcodeInput.value;
         try {
@@ -14,6 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (data.authenticated) {
                 loginForm.style.display = 'none';
                 mainContent.style.display = 'block';
+                
+                // Fill form fields from URL parameters after authentication
+                const params = getUrlParams();
+                fillFormFromParams(params);
+
             } else {
                 alert('Invalid passcode. Please try again.');
             }
@@ -22,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('An error occurred during authentication. Please try again.');
         }
     });
+
     document.getElementById('fileInput').addEventListener('change', function(event) {
         const file = event.target.files[0];
         if (file) {
