@@ -2,3 +2,4 @@ User-agent: Mediapartners-Google*
 Disallow: *
 
 Sitemap: https://sctech.mooo.com/sitemap.xml
+ 
