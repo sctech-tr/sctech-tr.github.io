@@ -91,6 +91,9 @@
     <loc>sctech.mooo.com/img/buttons/firefox.gif</loc>
   </url>
   <url>
+    <loc>sctech.mooo.com/img/me.jpg</loc>
+  </url>
+  <url>
     <loc>sctech.mooo.com/README.md</loc>
   </url>
   <url>
@@ -119,9 +122,6 @@
   </url>
   <url>
     <loc>sctech.mooo.com/robots.txt</loc>
-  </url>
-  <url>
-    <loc>sctech.mooo.com/LICENSE-AVSPL</loc>
   </url>
   <url>
     <loc>sctech.mooo.com/idt.html</loc>
