@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>identity 3.0</title>
+    <link rel="stylesheet" href="css/idt.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <div id="loginForm">
+        <h2>login</h2>
+        <input type="password" id="passcode" placeholder="enter passcode">
+        <button id="loginButton">login</button>
+        <button onclick="alert('the passcode is 8969, i am too lazy to remove it')">view passcode</button>
+    </div>
+
+    <div id="mainContent" style="display: none;">
+        <h1>identity 3.0</h1>
+        <p><strong>IMPORTANT:</strong> this project is not maintained anymore. see <a href="http://about.openprofile.us.to">openprofile</a></p>
+        <div class="form-group">
+            <label for="fileInput">open .idt file:</label>
+            <input type="file" id="fileInput" accept=".idt">
+        </div>
+        <form id="idtForm">
+            <div class="form-group">
+                <label for="name">name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="surname">surname:</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+            <div class="form-group">
+                <label for="gender">gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="nonbinary">non-binary</option>
+                    <option value="agender">agender</option>
+                    <option value="bigender">bigender</option>
+                    <option value="pangender">pangender</option>
+                    <option value="genderqueer">genderqueer</option>
+                    <option value="genderfluid">genderfluid</option>
+                    <option value="other">other</option>
+                    <option value="fuckyou">prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mail">email:</label>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div class="form-group">
+                <label for="phone">phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="job">job:</label>
+                <input type="text" id="job" name="job">
+            </div>
+            <div class="form-group">
+                <label for="website">website:</label>
+                <input type="url" id="website" name="website">
+            </div>
+            <div class="form-group">
+                <label for="github">github:</label>
+                <input type="url" id="github" name="github">
+            </div>
+            <div class="form-group">
+                <label for="instagram">instagram:</label>
+                <input type="url" id="instagram" name="instagram">
+            </div>
+            <div class="form-group">
+                <label for="x">x (twitter):</label>
+                <input type="url" id="x" name="x">
+            </div>
+            <div class="form-group">
+                <label for="facebook">facebook:</label>
+                <input type="url" id="facebook" name="facebook">
+            </div>
+            <div class="form-group">
+                <label for="youtube">youtube:</label>
+                <input type="url" id="youtube" name="youtube">
+            </div>
+        </form>
+        <button id="saveButton">save .idt file</button>
+    </div>
+
+    <script src="js/idt.js"></script>
+</body>
+</html>
