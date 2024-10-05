@@ -114,3 +114,7 @@ pre, code {
 a {
     color: #ffffff; /* white links */
 }
+
+.centered_img {
+    align-self: center;
+}
