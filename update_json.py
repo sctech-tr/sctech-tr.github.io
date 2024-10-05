@@ -1,7 +1,24 @@
 import os
 import json
+import requests
 from datetime import datetime
 from github import Github
+
+def fetch_random_meal():
+    response = requests.get("https://www.themealdb.com/api/json/v1/1/random.php")
+    if response.status_code == 200:
+        meal_data = response.json()
+        return meal_data['meals'][0]['strMeal']
+    else:
+        return "Error fetching meal"
+
+def fetch_random_name():
+    response = requests.get("https://randomuser.me/api")
+    if response.status_code == 200:
+        user_data = response.json()
+        return user_data['results'][0]['name']['first']  # Correctly extracting the first name
+    else:
+        return "Error fetching name"
 
 def update_json():
     # Read the existing JSON file
@@ -17,15 +34,13 @@ def update_json():
 
     today = datetime.now()
 
-    # Update only the date, day, and special_message
+    # Fetch a random meal and name
+    data["meal"] = fetch_random_meal()
+    data["name"] = fetch_random_name()  # Fetching only the first name
+
+    # Update only the date and day
     data["date"] = today.strftime("%Y-%m-%d")
     data["day"] = today.strftime("%A")
-
-    # Add Pride Month message in June
-    if today.month == 6:
-        data["special_message"] = "Happy Pride Month!"
-    else:
-        data["special_message"] = ""
 
     return data
 
