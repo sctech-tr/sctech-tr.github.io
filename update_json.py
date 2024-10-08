@@ -4,6 +4,8 @@ import requests
 from datetime import datetime
 from github import Github
 
+API_KEY = "70e0c2020bdf4020b670925f6386df3d"
+
 def fetch_random_meal():
     response = requests.get("https://www.themealdb.com/api/json/v1/1/random.php")
     if response.status_code == 200:
@@ -13,10 +15,17 @@ def fetch_random_meal():
         return "Error fetching meal"
 
 def fetch_random_name():
-    response = requests.get("https://randomuser.me/api")
+    headers = {
+        'X-Api-Key': API_KEY
+    }
+    params = {
+        'nameType': 'firstname',  # You can change to 'surname' or 'fullname'
+        'quantity': 1
+    }
+    response = requests.get("https://randommer.io/api/Name", headers=headers, params=params)
     if response.status_code == 200:
-        user_data = response.json()
-        return user_data['results'][0]['name']['first']  # Correctly extracting the first name
+        name_data = response.json()
+        return name_data[0]  # Extract the first name
     else:
         return "Error fetching name"
 
@@ -32,7 +41,7 @@ def fetch_random_quote():
             quote_response = requests.get(f"https://en.wikiquote.org/w/api.php?action=parse&pageid={page_id}&prop=text&format=json")
             if quote_response.status_code == 200:
                 parsed_page = quote_response.json()
-                # Extracting the first quote (This may need more parsing based on HTML)
+                # Extracting the first quote (may require additional HTML parsing)
                 return parsed_page['parse']['text']['*']
             else:
                 return "Error fetching quote"
@@ -63,7 +72,7 @@ def update_json():
         # If the file doesn't exist, create a default structure
         data = {
             "name": "if you're seeing this, the workflow is broken.",
-            "meal": "please contact sctech@national.shitposting.agency",
+            "meal": "please contact sctechwastaken@proton.me",
             "quote": "No quote available"
         }
 
@@ -71,7 +80,7 @@ def update_json():
 
     # Fetch a random meal, name, and quote
     data["meal"] = fetch_random_meal()
-    data["name"] = fetch_random_name()  # Fetching only the first name
+    data["name"] = fetch_random_name()  # Fetching name from Randommer API
     data["quote"] = fetch_random_quote()  # Fetch a random quote
 
     # Update only the date and day
