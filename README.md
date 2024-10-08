@@ -19,7 +19,7 @@ Learn how to open a PR by referring to GitHub's documentation.
 
 **or**
 
-Send your file via email to: [sctech@national.shitposting.agency](mailto:sctech@national.shitposting.agency)
+Send your file via email to: [sctechwastaken@pm.me](mailto:sctechwastaken@pm.me)
 
 ## Rules:
 - No NSFW content.
