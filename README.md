@@ -19,7 +19,7 @@ Learn how to open a PR by referring to GitHub's documentation.
 
 **or**
 
-Send your file via email to: [sctechwastaken@pm.me](mailto:sctechwastaken@pm.me)
+Send your file via email to: [sctechwastaken@proton.me](mailto:sctechwastaken@proton.me)
 
 ## Rules:
 - No NSFW content.
