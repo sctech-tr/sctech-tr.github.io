@@ -20,6 +20,26 @@ def fetch_random_name():
     else:
         return "Error fetching name"
 
+def fetch_random_quote():
+    try:
+        response = requests.get("https://en.wikiquote.org/w/api.php?action=query&format=json&list=random&rnlimit=1&rnnamespace=0")
+        if response.status_code == 200:
+            random_page = response.json()['query']['random'][0]
+            page_id = random_page['id']
+
+            # Fetch the quote from the specific Wikiquote page
+            quote_response = requests.get(f"https://en.wikiquote.org/w/api.php?action=parse&pageid={page_id}&prop=text&format=json")
+            if quote_response.status_code == 200:
+                parsed_page = quote_response.json()
+                # Extracting the first quote (This may need more parsing based on HTML)
+                return parsed_page['parse']['text']['*']
+            else:
+                return "Error fetching quote"
+        else:
+            return "Error fetching random Wikiquote page"
+    except Exception as e:
+        return f"Exception occurred: {e}"
+
 def update_json():
     # Read the existing JSON file
     try:
@@ -29,14 +49,16 @@ def update_json():
         # If the file doesn't exist, create a default structure
         data = {
             "name": "if you're seeing this, the workflow is broken.",
-            "meal": "please contact sctech@national.shitposting.agency"
+            "meal": "please contact sctech@national.shitposting.agency",
+            "quote": "No quote available"
         }
 
     today = datetime.now()
 
-    # Fetch a random meal and name
+    # Fetch a random meal, name, and quote
     data["meal"] = fetch_random_meal()
     data["name"] = fetch_random_name()  # Fetching only the first name
+    data["quote"] = fetch_random_quote()  # Fetch a random quote
 
     # Update only the date and day
     data["date"] = today.strftime("%Y-%m-%d")
