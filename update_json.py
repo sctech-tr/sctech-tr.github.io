@@ -30,26 +30,6 @@ def fetch_random_name():
         return "Error fetching name"
 
 def fetch_random_quote():
-<<<<<<< Updated upstream
-    try:
-        response = requests.get("https://en.wikiquote.org/w/api.php?action=query&format=json&list=random&rnlimit=1&rnnamespace=0")
-        if response.status_code == 200:
-            random_page = response.json()['query']['random'][0]
-            page_id = random_page['id']
-
-            # Fetch the quote from the specific Wikiquote page
-            quote_response = requests.get(f"https://en.wikiquote.org/w/api.php?action=parse&pageid={page_id}&prop=text&format=json")
-            if quote_response.status_code == 200:
-                parsed_page = quote_response.json()
-                # Extracting the first quote (may require additional HTML parsing)
-                return parsed_page['parse']['text']['*']
-            else:
-                return "Error fetching quote"
-        else:
-            return "Error fetching random Wikiquote page"
-    except Exception as e:
-        return f"Exception occurred: {e}"
-=======
     # category = 'happiness'  # You can change the category to anything supported by API Ninjas
     api_url = f'https://api.api-ninjas.com/v1/quotes'
     headers = {
@@ -61,7 +41,6 @@ def fetch_random_quote():
         return quote_data[0]['quote']  # Extract the quote from the API response
     else:
         return f"Error fetching quote: {response.status_code}, {response.text}"
->>>>>>> Stashed changes
 
 def update_json():
     # Read the existing JSON file
