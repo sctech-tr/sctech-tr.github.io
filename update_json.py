@@ -51,7 +51,7 @@ def update_json():
         # If the file doesn't exist, create a default structure
         data = {
             "name": "if you're seeing this, the workflow is broken.",
-            "meal": "please contact sctech-tr@googlegroups.com",
+            "meal": "please contact gq2ic3wbe@mozmail.com",
             "quote": "No quote available"
         }
 

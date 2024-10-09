@@ -19,7 +19,7 @@ Learn how to open a PR by referring to GitHub's documentation.
 
 **or**
 
-Send your file via email to: [sctech-tr@googlegroups.com](mailto@sctech-tr@googlegroups.com)
+Send your file via email to: [gq2ic3wbe@mozmail.com](mailto:gq2ic3wbe@mozmail.com)
 
 ## Rules:
 - No NSFW content.
