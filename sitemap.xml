@@ -10,6 +10,9 @@
     <loc>sctech.mooo.com/CNAME</loc>
   </url>
   <url>
+    <loc>sctech.mooo.com/.gitattributes</loc>
+  </url>
+  <url>
     <loc>sctech.mooo.com/robots.txt</loc>
   </url>
   <url>
@@ -79,6 +82,9 @@
     <loc>sctech.mooo.com/contact.html</loc>
   </url>
   <url>
+    <loc>sctech.mooo.com/img/shared/info.txt</loc>
+  </url>
+  <url>
     <loc>sctech.mooo.com/img/buttons/example.webp</loc>
   </url>
   <url>
@@ -122,9 +128,6 @@
   </url>
   <url>
     <loc>sctech.mooo.com/style.css</loc>
-  </url>
-  <url>
-    <loc>sctech.mooo.com/wii_bold.ttf</loc>
   </url>
   <url>
     <loc>sctech.mooo.com/idt_legacy.html</loc>
