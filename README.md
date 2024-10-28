@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc1bc6e4-be4c-4a3b-8ac5-5b55c52e409e/deploy-status)](https://app.netlify.com/sites/sctech/deploys)
 # welcome to my website!
 you will find things here.
 ## How to add your personal page
