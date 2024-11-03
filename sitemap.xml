@@ -58,6 +58,9 @@
     <loc>sctech.netlify.app/gh_index.html</loc>
   </url>
   <url>
+    <loc>sctech.netlify.app/pythonos_apps/calc.py</loc>
+  </url>
+  <url>
     <loc>sctech.netlify.app/pythonos_apps/ip.py</loc>
   </url>
   <url>
