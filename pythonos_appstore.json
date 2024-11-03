@@ -6,5 +6,9 @@
     "himom": {
         "description": "Hi mom! app to test PythonOS.",
         "download_url": "https://sctech.netlify.app/pythonos_apps/himom.py"
+    },
+    "ip": {
+        "description": "Get your IP address.",
+        "download_url": "https://sctech.netlify.app/pythonos_apps/ip.py"
     }
 }
