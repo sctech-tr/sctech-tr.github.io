@@ -61,7 +61,10 @@
     <loc>sctech.netlify.app/pythonos_apps/ip.py</loc>
   </url>
   <url>
-    <loc>sctech.netlify.app/pythonos_apps/himom.py</loc>
+    <loc>sctech.netlify.app/pythonos_apps/print.py</loc>
+  </url>
+  <url>
+    <loc>sctech.netlify.app/pythonos_apps/datetime.py</loc>
   </url>
   <url>
     <loc>sctech.netlify.app/pythonos_apps/hello_world.py</loc>
