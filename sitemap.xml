@@ -85,6 +85,9 @@
     <loc>sctech.netlify.app/teleport.html</loc>
   </url>
   <url>
+    <loc>sctech.netlify.app/.well-known/security.txt</loc>
+  </url>
+  <url>
     <loc>sctech.netlify.app/contact.html</loc>
   </url>
   <url>
