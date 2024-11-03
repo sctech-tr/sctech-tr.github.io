@@ -1,9 +1,9 @@
 {
-    "notepad": {
+    "hello_world": {
         "description": "Hello world! app to test PythonOS.",
         "download_url": "https://sctech.netlify.app/pythonos_apps/hello_world.py"
     },
-    "weather": {
+    "himom": {
         "description": "Hi mom! app to test PythonOS.",
         "download_url": "https://sctech.netlify.app/pythonos_apps/himom.py"
     }
