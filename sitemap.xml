@@ -58,6 +58,12 @@
     <loc>sctech.netlify.app/gh_index.html</loc>
   </url>
   <url>
+    <loc>sctech.netlify.app/pythonos_apps/himom.py</loc>
+  </url>
+  <url>
+    <loc>sctech.netlify.app/pythonos_apps/hello_world.py</loc>
+  </url>
+  <url>
     <loc>sctech.netlify.app/index.html</loc>
   </url>
   <url>
@@ -86,6 +92,9 @@
   </url>
   <url>
     <loc>sctech.netlify.app/README.md</loc>
+  </url>
+  <url>
+    <loc>sctech.netlify.app/pythonos_appstore.json</loc>
   </url>
   <url>
     <loc>sctech.netlify.app/teleport.html</loc>
