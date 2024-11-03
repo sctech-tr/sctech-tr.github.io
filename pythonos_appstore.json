@@ -1,14 +1,18 @@
 {
-    "hello_world": {
-        "description": "Hello world! app to test PythonOS.",
-        "download_url": "https://sctech.netlify.app/pythonos_apps/hello_world.py"
-    },
-    "himom": {
-        "description": "Hi mom! app to test PythonOS.",
-        "download_url": "https://sctech.netlify.app/pythonos_apps/himom.py"
-    },
     "ip": {
         "description": "Get your IP address.",
         "download_url": "https://sctech.netlify.app/pythonos_apps/ip.py"
+    },
+    "print": {
+        "description": "Print a message.",
+        "download_url": "https://sctech.netlify.app/pythonos_apps/print.py"
+    },
+    "datetime": {
+        "description": "Get the current date and time.",
+        "download_url": "https://sctech.netlify.app/pythonos_apps/datetime.py"
+    },
+    "hello_world": {
+        "description": "Print 'Hello, World!'",
+        "download_url": "https://sctech.netlify.app/pythonos_apps/hello_world.py"
     }
 }
