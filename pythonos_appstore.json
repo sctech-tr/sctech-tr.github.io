@@ -14,5 +14,9 @@
     "hello_world": {
         "description": "Print 'Hello, World!'",
         "download_url": "https://sctech.netlify.app/pythonos_apps/hello_world.py"
+    },
+    "calc": {
+        "description": "A simple calculator.",
+        "download_url": "https://sctech.netlify.app/pythonos_apps/calc.py"
     }
 }
