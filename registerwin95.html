@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Microsoft &copy; Windows 95 &copy;</title> <!-- bruh -->
+    <script>
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+      
+      function wakeUp() {
+        alert(`update your windows version lol, it's ${currentYear}`)
+        return false;
+      }
+    </script>
+</head>
+<body>
+    <h1>Register your Microsoft &copy; Windows 95 &copy; installation</h1>
+    <p>Please register your Microsoft &copy; Windows 95 &copy; installation here.</p>
+    <form id="registerForm" onsubmit="return wakeUp();">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br>
+        <br>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required /><br>
+        <br>
+        <label for="tel">Telephone Number:</label>
+        <input type="tel" id="tel" name="tel" required /><br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br>
+        <br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required> </textarea>
+        <br>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
