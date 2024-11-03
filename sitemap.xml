@@ -49,6 +49,9 @@
     <loc>sctech.netlify.app/registerwin95.html</loc>
   </url>
   <url>
+    <loc>sctech.netlify.app/cc.html</loc>
+  </url>
+  <url>
     <loc>sctech.netlify.app/avspl.txt</loc>
   </url>
   <url>
@@ -203,6 +206,9 @@
   </url>
   <url>
     <loc>sctech.netlify.app/js/pphub.js</loc>
+  </url>
+  <url>
+    <loc>sctech.netlify.app/js/cc.js</loc>
   </url>
   <url>
     <loc>sctech.netlify.app/js/gh_redir.js</loc>
