@@ -4,7 +4,7 @@
         "desc": "a powerful fetch script for systems that support sh",
         "version": "1.8",
         "install": "cd ~ && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make install",
-        "remove": "cd ~ && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make uninstall",
+        "remove": "cd ~ && rm -rf betterfetch && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make uninstall",
         "update": "cd ~ && rm -rf betterfetch && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make install",
         "src": "https://github.com/sctech-tr/betterfetch"
     },
