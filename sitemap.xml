@@ -28,6 +28,9 @@
     <loc>sctech.netlify.app/LICENSE</loc>
   </url>
   <url>
+    <loc>sctech.netlify.app/scpkg_db.json</loc>
+  </url>
+  <url>
     <loc>sctech.netlify.app/.gitignore</loc>
   </url>
   <url>
