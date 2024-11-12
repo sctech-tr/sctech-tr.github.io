@@ -3,7 +3,7 @@
         "name": "betterfetch",
         "desc": "a powerful fetch script for systems that support sh",
         "version": "1.8",
-        "install": "cd ~ && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make install",
+        "install": "cd ~ && rm -rf betterfetch && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make install",
         "remove": "cd ~ && rm -rf betterfetch && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make uninstall",
         "update": "cd ~ && rm -rf betterfetch && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make install",
         "src": "https://github.com/sctech-tr/betterfetch"
@@ -12,7 +12,7 @@
         "name": "kanban",
         "desc": "simple but awesome lightweight self-hosted kanban board built with node.js",
         "version": "1.0",
-        "install": "cd ~ && git clone https://github.com/sctech-tr/kanban.git sctech-kanban && cd kanban && npm install && echo run it with node server.js in ~/sctech-kanban/",
+        "install": "cd ~ && rm -rf sctech-kanban && git clone https://github.com/sctech-tr/kanban.git sctech-kanban && cd kanban && npm install && echo run it with node server.js in ~/sctech-kanban/",
         "remove": "cd ~ && rm -rf sctech-kanban",
         "update": "cd ~ && rm -rf sctech-kanban && git clone https://github.com/sctech-tr/kanban.git sctech-kanban && cd kanban && npm install && echo run it with node server.js in ~/sctech-kanban/",
         "src": "https://github.com/sctech-tr/kanban"
@@ -30,7 +30,7 @@
         "name": "nudo",
         "desc": "normal user do",
         "version": "1.0",
-        "install": "cd ~ && git clone https://github.com/sctech-tr/nudo.git && cd nudo && sudo make install",
+        "install": "cd ~ && rm -rf nudo &&git clone https://github.com/sctech-tr/nudo.git && cd nudo && sudo make install",
         "remove": "cd ~ && rm -rf nudo && git clone https://github.com/sctech-tr/nudo.git && cd nudo && sudo make uninstall",
         "update": "cd ~ && rm -rf nudo && git clone https://github.com/sctech-tr/nudo.git && cd nudo && sudo make install",
         "src": "https://github.com/sctech-tr/nudo"
