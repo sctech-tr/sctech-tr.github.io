@@ -1,0 +1,83 @@
+[
+    {
+        "name": "betterfetch",
+        "desc": "a powerful fetch script for systems that support sh",
+        "version": "1.8",
+        "install": "cd ~ && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make install",
+        "remove": "cd ~ && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make uninstall",
+        "update": "cd ~ && rm -rf betterfetch && git clone https://github.com/sctech-tr/betterfetch.git && cd betterfetch && sudo make install",
+        "src": "https://github.com/sctech-tr/betterfetch"
+    },
+    {
+        "name": "kanban",
+        "desc": "simple but awesome lightweight self-hosted kanban board built with node.js",
+        "version": "1.0",
+        "install": "cd ~ && git clone https://github.com/sctech-tr/kanban.git sctech-kanban && cd kanban && npm install && echo run it with node server.js in ~/sctech-kanban/",
+        "remove": "cd ~ && rm -rf sctech-kanban",
+        "update": "cd ~ && rm -rf sctech-kanban && git clone https://github.com/sctech-tr/kanban.git sctech-kanban && cd kanban && npm install && echo run it with node server.js in ~/sctech-kanban/",
+        "src": "https://github.com/sctech-tr/kanban"
+    },
+    {
+        "name": "lockedimg",
+        "desc": "secure image locker in C that encrypts your images with a password and requires a password to decrypt them ",
+        "version": "1.0",
+        "install": "cd ~ && wget https://github.com/sctech-tr/lockedimg/releases/download/1.0/lockedimg.zip && unzip lockedimg.zip && cd lockedimg && sudo mv lockedimg /usr/bin",
+        "remove": "sudo rm /usr/bin/lockedimg",
+        "update": "cd ~ && rm lockedimg.zip && rm -rf lockedimg && wget https://github.com/sctech-tr/lockedimg/releases/download/1.0/lockedimg.zip && unzip lockedimg.zip && cd lockedimg && sudo mv lockedimg /usr/bin",
+        "src": "https://github.com/sctech-tr/lockedimg"
+    },
+    {
+        "name": "nudo",
+        "desc": "normal user do",
+        "version": "1.0",
+        "install": "cd ~ && git clone https://github.com/sctech-tr/nudo.git && cd nudo && sudo make install",
+        "remove": "cd ~ && rm -rf nudo && git clone https://github.com/sctech-tr/nudo.git && cd nudo && sudo make uninstall",
+        "update": "cd ~ && rm -rf nudo && git clone https://github.com/sctech-tr/nudo.git && cd nudo && sudo make install",
+        "src": "https://github.com/sctech-tr/nudo"
+    },
+    {
+        "name": "pythonOS",
+        "desc": "an entire operating system in python!",
+        "version": "1.0",
+        "install": "echo INFO: THIS IS A NETWORK-LOADING APP. && pip install requests && curl https://raw.githubusercontent.com/sctech-tr/pythonOS/refs/heads/main/pythonos.py | sudo python -",
+        "remove": "echo this is a network-loading program, you cannot remove it.",
+        "update": "echo INFO: THIS IS A NETWORK-LOADING APP. && pip install requests && curl https://raw.githubusercontent.com/sctech-tr/pythonOS/refs/heads/main/pythonos.py | sudo python -",
+        "src": "https://github.com/sctech-tr/pythonOS"
+    },
+    {
+        "name": "rsstools",
+        "desc": "tools for managing rss feeds in python ",
+        "version": "0.3.0",
+        "install": "pip install rsstools",
+        "remove": "pip uninstall rsstools",
+        "update": "pip install --upgrade rsstools",
+        "src": "https://github.com/sctech-tr/rsstools"
+    },
+    {
+        "name": "scfetch",
+        "desc": "the ultimate successor to neofetch and betterfetch. runs on windows, linux and macOS",
+        "version": "1.5.1",
+        "install": "pip install scfetch",
+        "remove": "pip uninstall scfetch",
+        "update": "pip install --upgrade scfetch",
+        "src": "https://github.com/sctech-tr/scfetch"
+    },
+    {
+        "name": "turkiye-il-plakalari-py",
+        "desc": "Python port of Türkiye İl Plakaları by cambazm",
+        "version": "1.0",
+        "install": "echo INFO: THIS IS A NETWORK-LOADING APP. && pip install requests && curl https://raw.githubusercontent.com/sctech-tr/turkiye-il-plakalari-py/refs/heads/main/main.py | sudo python -",
+        "remove": "echo this is a network-loading program, you cannot remove it.",
+        "update": "echo INFO: THIS IS A NETWORK-LOADING APP. && pip install requests && curl https://raw.githubusercontent.com/sctech-tr/turkiye-il-plakalari-py/refs/heads/main/main.py | sudo python -",
+        "src": "https://github.com/sctech-tr/turkiye-il-plakalari-py"
+    },
+    {
+        "name": "upm",
+        "desc": " universal package manager",
+        "version": "1.0",
+        "install": "wget -qO- https://raw.githubusercontent.com/sctech-tr/upm/main/install.sh | $SHELL",
+        "remove": "sudo rm /usr/bin/upm && sudo rm /etc/upm-version",
+        "update": "wget -qO- https://raw.githubusercontent.com/sctech-tr/upm/main/install.sh | $SHELL",
+        "src": "https://github.com/sctech-tr/upm"
+    }
+]
