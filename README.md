@@ -12,7 +12,7 @@ it's a json file that you can use to get today's quick info, like calendars. sam
   "quote": "My imagination can picture no fairer happiness than to continue living for art."
 }
 ```
-you can access it via `https://sctech.netlify.app/todays-overview.json` or `tr.ee/LkPN1H` (for short, but link rot *can* happen over time)
+you can access it via `https://sctech.netlify.app/todays-overview.json`
 ## How to add your personal page
 
 **1.** Fork the website repository to your GitHub account.
