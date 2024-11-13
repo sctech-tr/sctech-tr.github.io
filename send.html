@@ -6,6 +6,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <title>send me a message</title>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
     <script>
         (function(){
             emailjs.init("cBNzAwZunI-sqz1Ng");
@@ -13,12 +14,23 @@
 
         function sendMail(e) {
             e.preventDefault(); // Prevent default form submission
+            if (typeof hcaptcha !== 'undefined') {
+                const response = hcaptcha.getResponse();
+                if (response.length === 0) {
+                    alert("please complete the hcaptcha.");
+                    return false;
+                }
+            } else {
+                alert("hcaptcha is not loaded properly. contact dev");
+                return false;
+            }
             emailjs.sendForm('service_khnxrpa', 'template_ro64laf', '#emailForm')
-                .then(function(response) {
-                    alert('email sent successfully!');
-                }, function(error) {
-                    alert('failed to send email. error: ' + JSON.stringify(error));
-                });
+            .then(function(response) {
+                alert('email sent successfully!');
+            })
+            .catch(function(error) {
+                alert('failed to send email. error: ' + JSON.stringify(error));
+            });
         }
     </script>
 </head>
@@ -37,7 +49,9 @@
         
         <label for="message">message:</label><br>
         <textarea id="message" name="message" rows="10" cols="30" required></textarea><br><br>
-        
+
+        <div class="h-captcha" data-sitekey="3cbe28e8-d648-4372-b182-a6586f206864"></div>
+
         <input type="submit" value="send!!!">
     </form>
 </body>
