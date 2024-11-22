@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- sorry for bad indentation -->
 <html>
   <head>
     <meta charset="UTF-8">
@@ -9,37 +10,32 @@
     <meta property="og:description" content="sctech's website">
     <meta name="theme-color" content="#232423">
     <link rel="icon" type="image/jpeg" href="img/me.jpg">
-    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-    <script src="https://kit.fontawesome.com/6d280eddf4.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/6d280eddf4.js" crossorigin="anonymous"></script> no longer needed. was used for links -->
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <title>sctech's website!!</title>
   </head>
   <body>
-    <div class="topbar">
-      <span class="prompt" onclick="window.location.href = '../index.html'">[root@localhost.localdomain] $</span>
-      <a href="../about.html">/about</a>
-      <a href="../contact.html">/contact</a>
-      <a href="img/">/dlc</a>
-      <a href="https://docs.sctech.localplayer.dev">/docs</a>
-      <a href="../pages.html">/pages</a>
-      <a href="../projects.html">/projects</a>
-      <a href="https://sctech.instatus.com">/status</a>
-  </div>
-    <img class="centered_img" src="img/me.jpg">
+    <main class="grid-container">
+    <div class="grid-item full-width">
+    <img class="centered_img me" src="img/me.jpg">
     <h1><strong>hi!</strong></h1>
-    <p>i am a developer who has simple but nice projects.<br></p>
-    <hr>
+    <p>i am a developer. that's pretty much it.<br></p>
+    </div>
+    <div class="grid-item">
     <h3>info:</h3>
       <p>name: sctech<br>
-      pronouns: he/they/it
+      pronouns: <a href="https://pronouns.org">he/they/it</a>
     </p>
-    <hr>
+    </div>
+    <div class="grid-item">
     <h3>likes:</h3>
     <p>coding<br>
       wii hacking<br>
       linux<br>
       free software<br>
       bash<br>
+      python<br>
+      flask<br>
       wikis<br>
       wandering through github<br>
       making websites<br>
@@ -47,31 +43,45 @@
       <a href="img/wallpapers/">making wallpapers<!-- .........................maybe. i haven't made one in a while :p --><br></a>
       ....and a lot more!
     </p>
-    <hr>
-    <h3>links:</h3>
-      <a href="https://github.com/sctech-tr">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a href="mailto:sctech@sctech.localplayer.dev">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-      <a href="https://tag.rc24.xyz/user/823106689816723466">
-        <i class="fa-solid fa-tag"></i><br>
-      </a>
-      <a href="https://opr.ix.tc/sctech">OpenProfile<br></a>
-      <a href="https://pronouns.cc/@sctech">pronouns.cc<br></a>
-    <hr>
+    </div>
+    <div class="grid-item large-tile-horizontal">
     <h3>if you have a site, you can put my button there:</h3>
     <div class="code-block">
 &lt;a href="https://sctech.localplayer.dev"&gt;
   &lt;img src="https://sctech.localplayer.dev/img/buttons/sctech.png" alt="sctech's website :)"&gt;
 &lt;/a&gt;
     </div>
-    <hr>
-    <h3>anyways here's a cool hcaptcha :)</h3>
-    <div class="h-captcha" data-sitekey="3cbe28e8-d648-4372-b182-a6586f206864"></div>
-    <hr>
-    <h3>buttons:</h3>
+    </div>
+    <div class="grid-item">
+      <h3>web experiments:</h3>
+      <a href="cc.html">console clicker<br></a>
+      <a href="teleport.html">teleport between mirrors<br></a>
+      <a href="ip.html">what the heck is my ip?<br></a>
+      <a href="avspl.html">avspl<br></a>
+      <a href="goexplore.html">explorer<br></a>
+      <a href="wii.html">the wii friendly webpage<br></a>
+      <a href="gh_index.html">github links but longer<br></a>
+      </div>
+      <div class="grid-item">
+        <h3>contact me</h1>
+        <p>you can contact me via..</p>
+        <p>form: <a href="send.html">click here</a> <strong>(preferred way)</strong></p>
+        <p>email: <a href="mailto:sctech@sctech.localplayer.dev">sctech@sctech.localplayer.dev</a><br></p>
+        <p>github: open an issue <a href="https://github.com/sctech-tr/sctech-tr">here</a></p>
+        <h3>public openpgp key:</h3>
+        <a href="./sctech.gpg">sctech.gpg</a>
+        </div>
+        <div class="grid-item">
+          <h3>links:</h3>
+            <a href="https://opr.ix.tc/sctech">OpenProfile<br></a>
+            <a href="https://pronouns.cc/@sctech">pronouns.cc<br></a>
+            <a href="https://tag.rc24.xyz/user/823106689816723466">LinkTag<br></a>
+            <a href="https://keyoxide.org/57BE156FEB39FB9905BA1299169CABCFA8FDD1CF">Keyoxide<br></a>
+            <a href="https://github.com/sctech-tr">GitHub<br></a>
+            <a href="https://git.gay/sctech">git.gay<br></a>
+            <a href="https://stackoverflow.com/users/27170304/sctech-tr">StackOverflow<br></a>
+          </div>
+    <div class= "grid-item"><h3>buttons:</h3>
     <p>want your button here? <a href="mailto:sctech@sctech.localplayer.dev">contact me!</a><br></p>
     <a href="https://sctech.netlify.app/">
       <img src="img/buttons/sctech.png" width="88" height="31" alt="sctech's website :)">
@@ -97,11 +107,22 @@
     <a href="https://mariluu.hehe.moe">
       <img src="img/buttons/maribanner.gif" alt="mariluu's site :)">
     </a>
-    
+    <img src="img/buttons/facebook.svg" alt="no facebook" width="88" height="31">
+    <img src="img/buttons/empty.png" alt="for rent" width="88" height="31">
+    <img src="img/buttons/empty.png" alt="for rent" width="88" height="31">
+    <img src="img/buttons/empty.png" alt="for rent" width="88" height="31">
+    <img src="img/buttons/empty.png" alt="for rent" width="88" height="31">
+    <img src="img/buttons/empty.png" alt="for rent" width="88" height="31">
+    <img src="img/buttons/empty.png" alt="for rent" width="88" height="31">
+    </div>
+    </main>
     <br>
     <br>
+    <footer>
+    <p>copyleft 2024-2024 sctech. no rights reserved.</p>
     <p>sctech's website is proudly powered by <a href="https://pages.gay">pages.gay</a> or <a href="https://netlify.com">netlify</a> depending on the mirror.</p>
     <p>view it on <a href="https://github.com/sctech-tr/website">github</a></p>
+    </footer>
   </body>
 </html>
 <!--- hey --->

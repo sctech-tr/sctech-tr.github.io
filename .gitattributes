@@ -1,6 +1,5 @@
 *.xml linguist-detectable
-*.xaml linguist-detectable
 *.yml linguist-detectable
 *.json linguist-detectable
 *.txt linguist-detectable
-*.md linguist-detectable
+*.svg linguist-detectable
