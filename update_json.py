@@ -33,7 +33,7 @@ def fetch_random_quote():
     # category = 'happiness'  # You can change the category to anything supported by API Ninjas
     api_url = f'https://api.api-ninjas.com/v1/quotes'
     headers = {
-        'X-Api-Key': 'l5kBs62MYeitKw5ckfhI8g==edZZbrUUIaMFAPIZ'
+        'X-Api-Key': 'l5kBs62MYeitKw5ckfhI8g==edZZbrUUIaMFAPIZ' # i can include the api key for shitty websites right
     }
     response = requests.get(api_url, headers=headers)
     if response.status_code == requests.codes.ok:
