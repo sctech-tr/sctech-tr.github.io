@@ -49,21 +49,6 @@
     <loc>sctech.localplayer.dev/gh_index.html</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/pythonos_apps/calc.py</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/pythonos_apps/ip.py</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/pythonos_apps/print.py</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/pythonos_apps/datetime.py</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/pythonos_apps/hello_world.py</loc>
-  </url>
-  <url>
     <loc>sctech.localplayer.dev/index.html</loc>
   </url>
   <url>
@@ -76,19 +61,28 @@
     <loc>sctech.localplayer.dev/sitemap.xml</loc>
   </url>
   <url>
+    <loc>sctech.localplayer.dev/CODEOWNERS</loc>
+  </url>
+  <url>
     <loc>sctech.localplayer.dev/workflows/todays-overviiew.yml</loc>
   </url>
   <url>
     <loc>sctech.localplayer.dev/workflows/generate-sitemap.yml</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/workflows/auto-merge.yml</loc>
+    <loc>sctech.localplayer.dev/pkg/pythonos_apps/calc.py</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/users/sctech.html</loc>
+    <loc>sctech.localplayer.dev/pkg/pythonos_apps/ip.py</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/users/rick-astley.html</loc>
+    <loc>sctech.localplayer.dev/pkg/pythonos_apps/print.py</loc>
+  </url>
+  <url>
+    <loc>sctech.localplayer.dev/pkg/pythonos_apps/datetime.py</loc>
+  </url>
+  <url>
+    <loc>sctech.localplayer.dev/pkg/pythonos_apps/hello_world.py</loc>
   </url>
   <url>
     <loc>sctech.localplayer.dev/pkg/seasonal-buttons.js</loc>
