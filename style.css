@@ -77,7 +77,12 @@ pre, code {
 }
 
 a {
-    color: #ffffff; /* white links */
+    color: #8be9fd; /* Light blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff; /* White hover */
 }
 
 .centered_img {
