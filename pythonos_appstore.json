@@ -1,22 +1,22 @@
 {
     "ip": {
         "description": "Get your IP address.",
-        "download_url": "https://sctech.netlify.app/pythonos_apps/ip.py"
+        "download_url": "https://sctech.netlify.app/pkg/pythonos_apps/ip.py"
     },
     "print": {
         "description": "Print a message.",
-        "download_url": "https://sctech.netlify.app/pythonos_apps/print.py"
+        "download_url": "https://sctech.netlify.app/pkg/pythonos_apps/print.py"
     },
     "datetime": {
         "description": "Get the current date and time.",
-        "download_url": "https://sctech.netlify.app/pythonos_apps/datetime.py"
+        "download_url": "https://sctech.netlify.app/pkg/pythonos_apps/datetime.py"
     },
     "hello_world": {
         "description": "Print 'Hello, World!'",
-        "download_url": "https://sctech.netlify.app/pythonos_apps/hello_world.py"
+        "download_url": "https://sctech.netlify.app/pkg/pythonos_apps/hello_world.py"
     },
     "calc": {
         "description": "A simple calculator.",
-        "download_url": "https://sctech.netlify.app/pythonos_apps/calc.py"
+        "download_url": "https://sctech.netlify.app/pkg/pythonos_apps/calc.py"
     }
 }

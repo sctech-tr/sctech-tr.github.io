@@ -56,7 +56,7 @@
     {
         "name": "scfetch",
         "desc": "the ultimate successor to neofetch and betterfetch. runs on windows, linux and macOS",
-        "version": "1.5.1",
+        "version": "1.8.0",
         "install": "pip install scfetch",
         "remove": "pip uninstall scfetch",
         "update": "pip install --upgrade scfetch",
