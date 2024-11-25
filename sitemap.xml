@@ -154,6 +154,9 @@
     <loc>sctech.localplayer.dev/img/buttons/archbtw.png</loc>
   </url>
   <url>
+    <loc>sctech.localplayer.dev/img/buttons/ublockorigin.png</loc>
+  </url>
+  <url>
     <loc>sctech.localplayer.dev/img/buttons/firefox2.gif</loc>
   </url>
   <url>
@@ -206,12 +209,6 @@
   </url>
   <url>
     <loc>sctech.localplayer.dev/js/ip.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/js/idt.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/js/pphub.js</loc>
   </url>
   <url>
     <loc>sctech.localplayer.dev/js/cc.js</loc>
