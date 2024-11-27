@@ -10,6 +10,21 @@
     <loc>sctech.localplayer.dev/CNAME</loc>
   </url>
   <url>
+    <loc>sctech.localplayer.dev/scripts/goexplore.js</loc>
+  </url>
+  <url>
+    <loc>sctech.localplayer.dev/scripts/ip.js</loc>
+  </url>
+  <url>
+    <loc>sctech.localplayer.dev/scripts/cc.js</loc>
+  </url>
+  <url>
+    <loc>sctech.localplayer.dev/scripts/gh_redir.js</loc>
+  </url>
+  <url>
+    <loc>sctech.localplayer.dev/scripts/gh_index.js</loc>
+  </url>
+  <url>
     <loc>sctech.localplayer.dev/.gitattributes</loc>
   </url>
   <url>
@@ -203,21 +218,6 @@
   </url>
   <url>
     <loc>sctech.localplayer.dev/avspl.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/js/goexplore.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/js/ip.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/js/cc.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/js/gh_redir.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/js/gh_index.js</loc>
   </url>
   <url>
     <loc>sctech.localplayer.dev/goexplore.html</loc>
