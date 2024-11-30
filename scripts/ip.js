@@ -1,5 +1,5 @@
 // Fetch IP from ipify API
-fetch('https://api.ipify.org?format=json')
+fetch('https://api64.ipify.org?format=json')
 .then(response => response.json())
 .then(data => {
     document.getElementById('ip-address').innerText = data.ip;
