@@ -37,9 +37,6 @@
     <loc>sctech.localplayer.dev/LICENSE</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/scpkg_db.json</loc>
-  </url>
-  <url>
     <loc>sctech.localplayer.dev/.gitignore</loc>
   </url>
   <url>
@@ -194,9 +191,6 @@
   </url>
   <url>
     <loc>sctech.localplayer.dev/img/wallpapers/i-use-gentoo-btw.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/rrhc.html</loc>
   </url>
   <url>
     <loc>sctech.localplayer.dev/css/goexplore.css</loc>
