@@ -1,219 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image.v1">
   <url>
-    <loc>sctech.localplayer.dev/cndl.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/sctech.gpg</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/CNAME</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/scripts/goexplore.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/scripts/ip.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/scripts/cc.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/scripts/gh_redir.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/scripts/gh_index.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/.gitattributes</loc>
+    <loc>sctech.localplayer.dev/cndl</loc>
   </url>
   <url>
     <loc>sctech.localplayer.dev/robots.txt</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/codebackup.html</loc>
+    <loc>sctech.localplayer.dev/codebackup</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/LICENSE</loc>
+    <loc>sctech.localplayer.dev/wii</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/.gitignore</loc>
+    <loc>sctech.localplayer.dev/gh-noparam</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/wii.html</loc>
+    <loc>sctech.localplayer.dev/registerwin95</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/todays-overview.json</loc>
+    <loc>sctech.localplayer.dev/cc</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/gh_noparam.html</loc>
+    <loc>sctech.localplayer.dev/gh-index</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/registerwin95.html</loc>
+    <loc>sctech.localplayer.dev/index</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/cc.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/avspl.txt</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/gh_index.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/index.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/send.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/update_json.py</loc>
+    <loc>sctech.localplayer.dev/send</loc>
   </url>
   <url>
     <loc>sctech.localplayer.dev/sitemap.xml</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/CODEOWNERS</loc>
+    <loc>sctech.localplayer.dev/teleport</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/workflows/todays-overviiew.yml</loc>
+    <loc>sctech.localplayer.dev/ip</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/workflows/generate-sitemap.yml</loc>
+    <loc>sctech.localplayer.dev/gh-redir</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/pkg/pythonos_apps/calc.py</loc>
+    <loc>sctech.localplayer.dev/avspl</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/pkg/pythonos_apps/ip.py</loc>
+    <loc>sctech.localplayer.dev/goexplore</loc>
   </url>
   <url>
-    <loc>sctech.localplayer.dev/pkg/pythonos_apps/print.py</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/pkg/pythonos_apps/datetime.py</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/pkg/pythonos_apps/hello_world.py</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/pkg/seasonal-buttons.js</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/README.md</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/pythonos_appstore.json</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/teleport.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/.well-known/security.txt</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/readme.txt</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/shared/nofetch3.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/shared/index.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/shared/nofetch1.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/shared/nofetch2.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/shared/info.txt</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/shared/vtc.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/index.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/example.webp</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/empty.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/maribanner.gif</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/firefox.gif</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/firefox3.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/facebook.svg</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/sctech.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/index.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/chromiumsucks.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/archbtw.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/iarchive.gif</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/ublockorigin.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/buttons/firefox2.gif</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/me.jpg</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/wallpapers/i-use-arch-btw.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/wallpapers/i-use-ubuntu-btw.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/wallpapers/i-use-fedora-btw.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/wallpapers/index.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/img/wallpapers/i-use-gentoo-btw.png</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/css/goexplore.css</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/css/ip.css</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/style.css</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/ip.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/gh_redir.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/404.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/avspl.html</loc>
-  </url>
-  <url>
-    <loc>sctech.localplayer.dev/goexplore.html</loc>
+    <loc>sctech.localplayer.dev/pronoun</loc>
   </url>
 </urlset>

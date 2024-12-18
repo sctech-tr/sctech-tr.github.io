@@ -22,7 +22,7 @@ function getParameterByName(name, url = window.location.href) {
       }
       window.location.href = redirectUrl;
     } else {
-      window.location.href = 'gh_noparam.html';
+      window.location.href = 'gh-noparam.html';
     }
   };
   

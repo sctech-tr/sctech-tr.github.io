@@ -7,7 +7,7 @@ function redirectToUrl(event) {
       const page = document.getElementById('page').value;
 
       // Construct the URL
-      const url = `https://sctech.netlify.app/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`; // not using sctech.localplayer.dev to avoid link rot, netlify is more reliable
+      const url = `https://sctech.netlify.app/gh-redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`; // not using sctech.localplayer.dev to avoid link rot, netlify is more reliable
 
       // Redirect to the constructed URL
       window.location.href = url;
@@ -20,7 +20,7 @@ function generateAndCopyLink() {
       const page = document.getElementById('page').value;
 
       // Construct the URL
-      const url = `https://sctech.netlify.app/gh_redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`; // not using sctech.localplayer.dev to avoid link rot, netlify is more reliable
+      const url = `https://sctech.netlify.app/gh-redir?u=${encodeURIComponent(username)}&r=${encodeURIComponent(repo)}&p=${encodeURIComponent(page)}`; // not using sctech.localplayer.dev to avoid link rot, netlify is more reliable
 
       // Copy the URL to the clipboard
       navigator.clipboard.writeText(url);
