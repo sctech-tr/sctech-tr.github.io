@@ -1,0 +1,12 @@
+{
+  "repositoryName": "sctech",
+  "apps": [
+    {
+      "id": "dev.localplayer.sctech.EmojiTranslator",
+      "name": "Emoji Translator",
+      "version": "1.1",
+      "description": "Translate emojis to text!",
+      "apkUrl": "https://go.sctech.localplayer.dev/dl/emoji"
+    }
+  ]
+}
